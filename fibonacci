@@ -1,0 +1,26 @@
+package project;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+	@SuppressWarnings("resource")
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Enter the no of terms in fibonaacci series");
+	int n= sc.nextInt();
+	int a=0,b=1,c;
+	System.out.print(a+"\n"+b);
+	
+		for(int j=0;j<=n-2;j++) {
+		c=a+b;
+		System.out.print("\n"+c);
+		
+	a=b;
+	b=c;
+	System.out.println("\n");
+	}
+
+	}
+
+}
